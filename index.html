@@ -2,59 +2,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Yared Leul Hagos - Portfolio</title>
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #f0f4f8, #ffffff);
       margin: 0;
       padding: 0;
-      background: #f9f9f9;
       color: #333;
     }
     .container {
       max-width: 900px;
       margin: 40px auto;
-      background: white;
-      padding: 2rem;
-      box-shadow: 0 0 12px rgba(0,0,0,0.05);
-      border-radius: 12px;
+      background: #fff;
+      padding: 2rem 2.5rem;
+      border-radius: 16px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+    }
+    .center {
+      text-align: center;
     }
     .profile-pic {
-      width: 160px;
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
       border-radius: 50%;
+      border: 4px solid #2a9d8f;
       margin-bottom: 1rem;
     }
-    h1, h2 {
-      color: #2c3e50;
+    h1 {
+      color: #1d3557;
+      margin-bottom: 0.2em;
+    }
+    h2 {
+      color: #2a9d8f;
+      margin-top: 2rem;
     }
     ul {
-      padding-left: 20px;
+      padding-left: 1.2em;
     }
     a {
       color: #0077b6;
       text-decoration: none;
     }
-    .lang {
-      float: right;
-      margin-top: -40px;
+    a:hover {
+      text-decoration: underline;
     }
-    .section {
-      margin-top: 2rem;
+    .contact-buttons {
+      margin-top: 1rem;
     }
     .contact-buttons a {
       display: inline-block;
-      margin-right: 10px;
+      margin: 6px 10px;
+      padding: 10px 18px;
+      border-radius: 8px;
       background: #0077b6;
       color: white;
-      padding: 8px 16px;
-      border-radius: 6px;
-      text-decoration: none;
-      font-size: 0.9rem;
+      font-size: 0.95rem;
+      transition: background 0.3s;
+    }
+    .contact-buttons a:hover {
+      background: #023e8a;
     }
     .cv-button {
-      background: #2a9d8f;
+      background: #2a9d8f !important;
+    }
+    .lang {
+      text-align: right;
+      font-size: 0.9rem;
+      margin-bottom: -2rem;
+    }
+    footer {
+      text-align: center;
+      margin-top: 3rem;
+      color: #aaa;
+      font-size: 0.9rem;
     }
   </style>
 </head>
@@ -63,56 +87,53 @@
     <div class="lang">
       🌍 <a href="#">EN</a> | <a href="#">FR</a> | <a href="#">AM</a>
     </div>
-    <div style="text-align: center;">
+    <div class="center">
       <img src="profile.jpg" alt="Yared Leul Hagos" class="profile-pic">
       <h1>Yared Leul Hagos</h1>
       <p><strong>RF and Microwave Engineer | PhD Researcher</strong></p>
       <div class="contact-buttons">
-        <a href="mailto:y.l.hagos@tue.nl">Email</a>
-        <a href="https://t.me/Yada43">Telegram</a>
-        <a href="https://wa.me/31658996679">WhatsApp</a>
-        <a class="cv-button" href="Yared Leul Hagos_CV.pdf" download>Download CV</a>
+        <a href="mailto:yaredd33@gmail.com">Email Me</a>
+        <a href="https://t.me/Yada43" target="_blank">Telegram</a>
+        <a href="https://wa.me/31658996679" target="_blank">WhatsApp</a>
+        <a class="cv-button" href="Yared Leul Hagos_CV.pdf" download>📄 Download CV</a>
       </div>
     </div>
 
-    <div class="section">
-      <h2>About Me</h2>
-      <p>I am a motivated PhD researcher at Eindhoven University of Technology, working on sub-THz reverberation chambers for antenna measurements beyond 300 GHz. My background includes RF/microwave engineering, antenna design, and measurement systems, supported by extensive simulation and practical experience.</p>
-    </div>
+    <h2>About Me</h2>
+    <p>I am a motivated PhD researcher at Eindhoven University of Technology, developing sub-THz reverberation chambers for advanced antenna measurement systems. I bring a strong foundation in RF and microwave engineering, simulation, and applied antenna design.</p>
 
-    <div class="section">
-      <h2>Education</h2>
-      <ul>
-        <li><strong>PhD, TU Eindhoven</strong> (2024–2028) – Sub-THz Reverberation Chambers</li>
-        <li><strong>Erasmus Master EMIMEO</strong> (2022–2024) – University of Limoges & Brescia</li>
-        <li><strong>BSc, Addis Ababa University</strong> (2015–2020) – Electrical & Computer Engineering</li>
-      </ul>
-    </div>
+    <h2>Education</h2>
+    <ul>
+      <li><strong>PhD, TU Eindhoven</strong> (2024–2028)</li>
+      <li><strong>Erasmus Master EMIMEO</strong> (2022–2024) – France & Italy</li>
+      <li><strong>BSc, Addis Ababa University</strong> (2015–2020)</li>
+    </ul>
 
-    <div class="section">
-      <h2>Experience</h2>
-      <ul>
-        <li>Ericsson R&D Paris – Master’s thesis on 40×40 phased arrays for 5G NTN</li>
-        <li>University of Brescia – Research assistant in UWB patch antenna design</li>
-      </ul>
-    </div>
+    <h2>Experience</h2>
+    <ul>
+      <li><strong>Ericsson R&D</strong> – Phased arrays for 5G NTN Satellites</li>
+      <li><strong>University of Brescia</strong> – UWB patch antennas, radiation measurement</li>
+    </ul>
 
-    <div class="section">
-      <h2>Skills</h2>
-      <p>CST Studio, HFSS, ADS, VNA, MATLAB, C++, Python, LaTeX, GitLab, Project Management</p>
-    </div>
+    <h2>Projects</h2>
+    <ul>
+      <li>MIMO Radar Antenna Synthesis</li>
+      <li>RIS Design for Q/V Band</li>
+      <li>ANN for Gesture Recognition</li>
+    </ul>
 
-    <div class="section">
-      <h2>Certifications & Awards</h2>
-      <ul>
-        <li>Erasmus Mundus Scholarship</li>
-        <li>Machine Learning – Stanford University</li>
-        <li>Best Bachelor Thesis Award – AAU</li>
-      </ul>
-    </div>
+    <h2>Skills</h2>
+    <p>CST, HFSS, MATLAB, Python, VNA, ADS, GitLab, C++, LaTeX</p>
 
-    <footer style="margin-top: 3rem; text-align: center; color: #999;">
-      &copy; 2025 Yared Leul Hagos. All rights reserved.
+    <h2>Honors & Certifications</h2>
+    <ul>
+      <li>Erasmus Mundus Scholarship</li>
+      <li>Machine Learning – Stanford</li>
+      <li>Best Bachelor Thesis – AAU</li>
+    </ul>
+
+    <footer>
+      &copy; 2025 Yared Leul Hagos. Designed with ❤️ and Tailored by ChatGPT.
     </footer>
   </div>
 </body>
