@@ -32,12 +32,8 @@ export default function Portfolio() {
       <section>
         <h2 className="text-2xl font-semibold">Experience</h2>
         <ul className="space-y-2">
-          <li>
-            <strong>Ericsson R&D, Paris</strong> – Master's Thesis (2024): Designed 40×40 phased antenna arrays for 5G NTN applications.
-          </li>
-          <li>
-            <strong>University of Brescia</strong> – Research Assistant (2023): Developed UWB patch antennas and performed radiation pattern measurements.
-          </li>
+          <li><strong>Ericsson R&D, Paris</strong> – Master's Thesis (2024): Designed 40×40 phased antenna arrays for 5G NTN applications.</li>
+          <li><strong>University of Brescia</strong> – Research Assistant (2023): Developed UWB patch antennas and performed radiation pattern measurements.</li>
         </ul>
       </section>
 
@@ -54,9 +50,7 @@ export default function Portfolio() {
 
       <section>
         <h2 className="text-2xl font-semibold">Skills</h2>
-        <p className="text-gray-700">
-          CST Studio, Ansys HFSS, ADS, VNA, MATLAB, C++, Python, GitLab, LaTeX, Microsoft Project
-        </p>
+        <p>CST Studio, Ansys HFSS, ADS, VNA, MATLAB, C++, Python, GitLab, LaTeX, Microsoft Project</p>
       </section>
 
       <section>
